@@ -56,6 +56,33 @@ body {
     left: 80rem;
 }
 
+.img-container::after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.30;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    text-align: center;
+    color: #ffffff;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.right-txt {
+    margin-top: 22rem;
+    margin-left: 58rem;
+    font-size: 6.5rem;
+}
+
 .header-logo {
     width: 17.8rem;
 }
@@ -74,7 +101,7 @@ body {
 .menu-list {
     display: flex;
     list-style-type: none;
-    margin-left: 21rem;
+    margin-left: 18rem;
 }
 
 .menu-link {
@@ -97,11 +124,21 @@ body {
 }
 
 .card-container {
-    margin-left: 10rem;
-    margin-top: 30rem;
+    margin-left: 8rem;
+    margin-top: 4rem;
     width: 63.4rem;
     color: rgb(255, 255, 255);
     font-size: 1.7rem;
+}
+
+.card-container::before {
+    content: "";
+    display: inline-block;
+    width: 0.1rem;
+    height: 18rem;
+    background-color: #54c583;
+    margin-left: 7rem;
+    margin-bottom: 0.5rem;
 }
 
 .card-header {
@@ -136,18 +173,86 @@ body {
     background-color: #00883D;
 }
 
-.block-container {}
-
-.card-container {}
-
-.vertical-text {
-    writing-mode: vertical-rl;
-    transform: rotate(-180deg);
-    text-align: center;
-    font-size: 3rem;
-    color: #ffffff;
+.block-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    bottom: 10rem;
+    width: 90rem;
+    margin-left: 55rem;
 }
 
-.block-img-container {
+.block-container::before {}
+
+.inner-container {
+    position: relative;
     display: flex;
+    width: 23.8rem;
+}
+
+.inner-container:first-child {
+    width: 32rem;
+    margin-right: 20px;
+}
+
+.inner-container::after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.30;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.inner-txt {
+    position: absolute;
+    font-size: 1.5rem;
+    line-height: 25px;
+    right: 1.5rem;
+    padding-right: 22rem;
+    padding-bottom: 2rem;
+    letter-spacing: 3px;
+}
+
+.inner-txt1 {
+    position: absolute;
+    font-size: 2.5rem;
+    line-height: 25px;
+    right: 1.5rem;
+    padding-right: 22rem;
+    padding-bottom: 2rem;
+    letter-spacing: 3px;
+}
+
+.inner-img {
+    width: 100%;
+}
+
+.small {
+    width: 24rem;
+    height: 16rem;
+    object-fit: cover;
+}
+
+.aduwant {
+    width: 140rem;
+    height: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wraper {
+    display: block;
+    width: 140rem;
+    height: 60rem;
+    border: 1px solid gray;
+    margin-top: 4rem;
+}
+
+.header-adu {
+    margin-top: 12rem;
+    font-size: 50px;
 }
