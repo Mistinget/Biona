@@ -136,9 +136,20 @@ body {
     display: inline-block;
     width: 0.1rem;
     height: 18rem;
-    background-color: #54c583;
+    background-color: #6bc076;
     margin-left: 7rem;
     margin-bottom: 0.5rem;
+}
+
+.card-container::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0.1rem;
+    height: 25rem;
+    background-color: #6bc076;
+    top: 65rem;
+    left: 15rem;
 }
 
 .card-header {
@@ -182,17 +193,16 @@ body {
     margin-left: 55rem;
 }
 
-.block-container::before {}
-
 .inner-container {
     position: relative;
     display: flex;
     width: 23.8rem;
+    box-shadow: 1px 1px 0.4em #00000077;
 }
 
 .inner-container:first-child {
     width: 32rem;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 .inner-container::after {
@@ -205,6 +215,32 @@ body {
     right: 0;
     bottom: 0;
     z-index: 0;
+}
+
+.button-wraper {
+    position: absolute;
+    top: 61rem;
+    left: 99.7rem;
+}
+
+.button-arrow {
+    height: 4rem;
+    width: 4rem;
+    font-size: 0;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    border: none;
+}
+
+.left {
+    background-image: url("../img/arrow_left.png");
+}
+
+.right {
+    background-image: url("../img/arrow_right.png");
+    margin-left: 2rem;
 }
 
 .inner-txt {
