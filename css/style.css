@@ -111,6 +111,10 @@ body {
     font-weight: normal;
 }
 
+.menu-link:hover {
+    border-bottom: 1px solid white;
+}
+
 .menu-list-item:nth-child(n+2) {
     margin-left: 4rem;
 }
@@ -234,6 +238,11 @@ body {
     border: none;
 }
 
+.button-arrow:focus {
+    border: none;
+    outline: none;
+}
+
 .left {
     background-image: url("../img/arrow_left.png");
 }
@@ -241,6 +250,16 @@ body {
 .right {
     background-image: url("../img/arrow_right.png");
     margin-left: 2rem;
+}
+
+.arrow_wraper {
+    position: absolute;
+    top: 80rem;
+    left: 7rem;
+}
+
+.down {
+    background-image: url("../img/arrow_down.png");
 }
 
 .inner-txt {
